@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box; /* Universal selector */
+}
+
+body {
+  color: black;
+}
+
+nav {
+  background-color: green; /* Background color */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.nav-brand {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white; /* Link color */
+  margin-left: 20px;
+}
+
+.nav-links a:hover {
+  color: blue; /* Change link color to yellow when hovered */
+}
+
+img {
+  border: 1px solid #000; 
+  padding: 10px; 
+  margin: 15px; 
+}
+
+a:hover {
+  color: teal; 
+}
+
+ul, ol {
+  list-style-type: circle; 
+  padding-left: 20px; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+h1::first-letter {
+  font-size: 1.2em;
+}
+
+
+
+/* For tablets: 2 columns */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile: 1 column */
+@media only screen and (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+}
+

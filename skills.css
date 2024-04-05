@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box; /* Universal selector */
+  }
+
+body {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
+
+  
+  nav {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .nav-brand {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-left: 20px;
+  }
+  .nav-links a:hover {
+    color: blue; /* Change link color to blue when hovered */
+  }
+  
+  a:hover {
+    color: teal; 
+  }
+  
+  ul, ol {
+    list-style-type: circle; 
+    padding-left: 20px; 
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  /* Style tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  
+  table > tr > td {
+    padding: 10px;
+  }
+  
+ 
+  table + table {
+    margin-top: 20px;
+  }
+  
+  /* Adjacent Sibling selector */
+  table ~ table {
+    margin-top: 30px;
+  }
+  
+
+font[size="8"] {
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Tablet and smaller devices */
+@media only screen and (max-width: 1024px) {
+  table {
+      width: 100%;
+  }
+
+  table td {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+
+  img {
+      margin: 0 auto; /* Center align the images */
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+  font[size="8"] {
+      font-size: 4em; /* Adjust font size for mobile */
+  }
+
+  img {
+      width: 50%; /* Adjust image size for mobile */
+  }
+}
+
+
+
+
+  

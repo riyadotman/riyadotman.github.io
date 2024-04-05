@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box; /* Universal selector */
+  }
+  
+  body {
+      color: black;
+    }
+    
+    nav {
+      background-color: green; /* Background color */
+      color: white; /* Text color */
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+    }
+    
+    .nav-brand {
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+    
+    .nav-links a {
+      color: white; /* Link color */
+      margin-left: 20px;
+    }
+    
+    .nav-links a:hover {
+      color: blue; /* Change link color to yellow when hovered */
+    }

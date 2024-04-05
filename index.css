@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box; /* Universal selector */
+}
+
+body {
+    color: black;
+  }
+  
+  nav {
+    background-color: green; /* Background color */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .nav-brand {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white; /* Link color */
+    margin-left: 20px;
+  }
+  
+  .nav-links a:hover {
+    color: blue; /* Change link color to yellow when hovered */
+  }
+  
+  .profile-image {
+    height: 400px;
+    width: auto;
+  }
+  
+  .title {
+    font-size: 2.5em;
+  }
+  
+  .subtitle {
+    font-size: 2em;
+  }
+  
+  .intro {
+    font-size: 1em;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+img {
+    border: 1px solid #000; 
+    padding: 10px; 
+    margin: 15px; 
+  }
+
+  a:hover {
+    color: teal; 
+  }
+  
+ 
+  ul, ol {
+    list-style-type: circle; 
+    padding-left: 20px; 
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.flex-item {
+    flex: 1; /* Allows the flex item to grow and shrink as needed */
+    min-width: 250px; /* Minimum width for each flex item to prevent them from getting too small */
+}
+
+/* Mobile styles: Stack the items vertically */
+@media only screen and (max-width: 600px) {
+    .flex-item {
+        width: 100%; /* Each item takes full width on small screens */
+    }
+}
+
+/* Tablet styles: Use a 2-column layout */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .flex-item {
+        width: calc(50% - 20px); /* Adjust width to account for the gap */
+    }
+}
+
+/* Desktop styles: Use a 3-column layout or more, based on content */
+@media only screen and (min-width: 1025px) {
+    .flex-item {
+        width: calc(33.33% - 20px); /* Adjust width to account for the gap */
+    }
+}
+
+/* Dark Blue Navbar Scheme */
+.navbar.dark-blue-scheme {
+  background-color: #000080; /* Navy blue */
+  color: #ffffff; /* White text for good contrast */
+}
+
+/* Dark Purple Navbar Scheme */
+.navbar.dark-purple-scheme {
+  background-color: #800080; /* Purple */
+  color: #ffffff; /* White text for good contrast */
+}
+

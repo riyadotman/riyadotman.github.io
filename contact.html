@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Riyad Otman</title>
+    <link rel="icon" href="Favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-brand">Riyad.WebDev</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Skills.html">Skills</a>
+          <a href="contact.html">Contact me</a>
+          <a href="Projects.html">Projects</a>
+        </div>
+      </nav>
+    </header> 
+    <main>
+      <center>
+        <h1><u>Contact Me 📲</u></h1>
+        <img src="GreetMemoji.png" alt="GreetMemoji" height="300" width="300" />
+        <br /><br /><br /><b><br />
+        <!-- Add a div with class "grid-container" around the images -->
+<div class="grid-container">
+  <a href="https://www.linkedin.com/in/riyad-otman/" target="_blank">
+    <img src="Linkedin.png" alt="LinkedIn" width="50" height="50" />
+  </a>
+  <a href="mailto:riyadotman@gmail.com">
+    <img src="Gmail.png" alt="Email" width="50" height="50" />
+  </a>
+</div>
+<form action="submit.php" method="post">
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Your Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Your Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+  <small>Format: 123-456-7890</small><br>
+
+  <label for="reason">Reason for Contact:</label><br>
+  <select id="reason" name="reason" required>
+    <option value="" disabled selected>Select a reason</option>
+    <option value="General Inquiry">General Inquiry</option>
+    <option value="Feedback">Feedback</option>
+    <option value="Business Proposal">Business Proposal</option>
+    <option value="Other">Other</option>
+  </select><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea><br>
+
+  <input type="submit" value="Submit">
+</form>
+      </center>
+      <script src="contact.js"></script>
+    </main>
+  </body>
+</html>
+
+
+  
+
+ 
+      
